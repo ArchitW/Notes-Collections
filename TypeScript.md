@@ -35,14 +35,6 @@ to do
 
 
 ## Classes
-| Type | Signature | Example | Read me |
-| ------ | ------ | ------ | ------ |
-| **xx** | `xxx`  | `xx` |  xxx |
-| **xx** | `xxx`  | `xx` |  xxx |
-| **xx** | `xxx`  | `xx` |  xxx |
-| **xx** | `xxx`  | `xx` |  xxx |
-| **xx** | `xxx`  | `xx` |  xxx |
-
 **ES5 VS TS**
 ```
  class Person {
@@ -60,10 +52,6 @@ to do
         return `${this.firstName} ${this.lastName}`;
     }
 }
-```
-```
-let person = new Person('171-28-0926','John','Doe');
-console.log(person.getFullName());
 ```
 **TS**
 ```
