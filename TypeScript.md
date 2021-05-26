@@ -79,12 +79,11 @@ let person = new Person(171280926, 'John', 'Doe');
 ```
 class Message {
   private _message: string; // Private variables, we name like this
-  
-/***
-1. get and set both have same name message() have public access modifier: prop can get accessed outside.
-2. set() does not have return type.
-3. get/set depends on param passed ex: pp.message="xxxx" calls set and pp.message calls get.
-***/
+  ```
+- get and set both have same name message() have public access modifier: prop can get accessed outside.
+-  set() does not have return type.
+- get/set depends on param passed ex: pp.message="xxxx" calls set and pp.message calls get.
+```
   public get message(): string {
     return this._message;
   }
