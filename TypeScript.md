@@ -34,12 +34,58 @@ to do
 | **Union** | `:(number|string)`  | `let result:number|string` | parameter that is either a number or a string |
 
 
+## Classes
+| Type | Signature | Example | Read me |
+| ------ | ------ | ------ | ------ |
+| **xx** | `xxx`  | `xx` |  xxx |
+| **xx** | `xxx`  | `xx` |  xxx |
+| **xx** | `xxx`  | `xx` |  xxx |
+| **xx** | `xxx`  | `xx` |  xxx |
+| **xx** | `xxx`  | `xx` |  xxx |
 
+**ES5 VS TS**
+```
+ class Person {
+    ssn;
+    firstName;
+    lastName;
 
+    constructor(ssn, firstName, lastName) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+```
+```
+let person = new Person('171-28-0926','John','Doe');
+console.log(person.getFullName());
+```
+**TS**
+```
+class Person {
+    ssn: string;
+    firstName: string;
+    lastName: string;
 
+    constructor(ssn: string, firstName: string, lastName: string) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+```
+```
+let person = new Person(171280926, 'John', 'Doe');
+```
 **Temp**
 | **xx** | `xxx`  | `xx` |  xxx |
 | **xx** | `xxx`  | `xx` | yyy ✅ xxx ❌  |
