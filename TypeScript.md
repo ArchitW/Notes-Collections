@@ -74,6 +74,34 @@ class Person {
 ```
 let person = new Person(171280926, 'John', 'Doe');
 ```
+
+**Private Variables**
+```
+class Person {
+  private _message: string; // Private variables, we name like this
+  
+/***
+1. get and set both have same name message()
+2. set() does not have return type
+3. get/set depends on param passed ex: pp.msg="xxxx" calls set and pp.msg calls get
+***/
+  public get message(): string {
+    return this._name;
+  }
+  public set message(theName: string) {
+    this._name = theName;
+  }
+}
+
+let pp = new Person();
+pp.message = "Archit";
+console.log(pp.message);
+
+```
+
+
+
 **Temp**
+
 | **xx** | `xxx`  | `xx` |  xxx |
 | **xx** | `xxx`  | `xx` | yyy ✅ xxx ❌  |
