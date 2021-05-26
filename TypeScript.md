@@ -77,7 +77,7 @@ let person = new Person(171280926, 'John', 'Doe');
 
 **Private Variables**
 ```
-class Person {
+class Message {
   private _message: string; // Private variables, we name like this
   
 /***
@@ -86,15 +86,15 @@ class Person {
 3. get/set depends on param passed ex: pp.message="xxxx" calls set and pp.message calls get.
 ***/
   public get message(): string {
-    return this._name;
+    return this._message;
   }
-  public set message(theName: string) {
-    this._name = theName;
+  public set message(theMessage: string) {
+    this._message = theMessage;
   }
 }
 
-let pp = new Person();
-pp.message = "Archit";
+let pp = new Message();
+pp.message = "this is Test Message";
 console.log(pp.message);
 
 ```
